@@ -1,2 +1,60 @@
+[
+  {
+    "id": "arithmetic-precedence",
+    "category": "arithmetic",
+    "title": "Operator precedence",
+    "source": "let answer = 2 + 3 * 4;\nprint answer;",
+    "expected": { "status": "success", "output": ["14"] }
+  },
+  {
+    "id": "if-else-true-branch",
+    "category": "control-flow",
+    "title": "If / else true branch",
+    "source": "let score = 8;\nif (score >= 5) {\n  print score;\n} else {\n  print 0;\n}",
+    "expected": { "status": "success", "output": ["8"] }
+  },
+  {
+    "id": "while-count-up",
+    "category": "control-flow",
+    "title": "Count with a while loop",
+    "source": "let count = 0;\nwhile (count < 4) {\n  count = count + 1;\n}\nprint count;",
+    "expected": { "status": "success", "output": ["4"] }
+  },
+  {
+    "id": "boolean-condition",
+    "category": "logic",
+    "title": "Boolean condition",
+    "source": "let ready = true;\nlet score = 9;\nif (ready && score >= 5) {\n  print score;\n}",
+    "expected": { "status": "success", "output": ["9"] }
+  },
+  {
+    "id": "invalid-character",
+    "category": "lexical-error",
+    "title": "Unexpected character",
+    "source": "print @;",
+    "expected": { "status": "error", "phase": "lexical" }
+  },
+  {
+    "id": "missing-semicolon",
+    "category": "syntax-error",
+    "title": "Missing statement terminator",
+    "source": "print 1",
+    "expected": { "status": "error", "phase": "syntax" }
+  },
+  {
+    "id": "unknown-variable",
+    "category": "semantic-error",
+    "title": "Undeclared variable",
+    "source": "print missing;",
+    "expected": { "status": "error", "phase": "semantic" }
+  },
+  {
+    "id": "division-by-zero",
+    "category": "runtime-error",
+    "title": "Division by zero",
+    "source": "print 10 / 0;",
+    "expected": { "status": "error", "phase": "runtime" }
+  }
+]
 # 24bce2925
 this project is to create source code,dataset and project document
