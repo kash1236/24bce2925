@@ -37,7 +37,7 @@ npm test
 ## Project materials
 
 - Source code: this repository.
-- Dataset: not included yet.
+- Dataset: [`data/educompiler-dataset.json`](data/educompiler-dataset.json), a labeled set of valid programs and compiler-error examples. `npm test` checks each entry against its expected behavior.
 - Assessment 10 report: add the finalized report when it is available.
 
 The compiler runs the supported language in its own small interpreter; it does not execute Python or arbitrary JavaScript source.
